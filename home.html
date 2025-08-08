@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🗺️ E-Commerce </title>
+  <link rel="stylesheet" href="style.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+  <!--nav-bar-->
+
+<nav class="navbar">
+  <div class="nav-left">
+    <button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+      <span></span>
+
+
+      
+      <span></span>
+      <span></span>
+    </button>
+    <div class="logo">🗺️ E-Commerce </div>
+  </div>
+
+  <ul class="nav-menu" id="nav-menu" role="menu">
+    <li role="none"><a href="home.html" role="menuitem">Home</a></li>
+    <li role="none"><a href="#" role="menuitem">About</a></li>
+    <li role="none"><a href="#" role="menuitem">Services</a></li>
+    <li role="none"><a href="#" role="menuitem">Contact</a></li>
+  </ul>
+<!--search bar-->
+  <form class="nav-search" role="search" action="#" method="GET">
+    <input type="search" name="q" placeholder="Search..." aria-label="Search" />
+    <button type="submit">Go</button>
+  </form>
+</nav>
+    <div class="product"> 
+
+      <div class="middle" data-price="2499">
+  <img src="shoe1.jpg" width="200px" height="200px" alt="Shoe Image">
+  <p class="product" width="150px" >Step up your style game with shoes that speak for you. Trendy, comfy, and bold—get yours before they’re gone!"</p>
+
+  <p class="product"><strong>Price:</strong> ₹2,499</p>
+
+  <div class="product">
+    <label>Qty:</label>
+    <input type="number" class="quantity-input" min="1" value="1" style="width: 50px;">
+  </div>
+
+  <div class="product" >
+    <button onclick="addToCart(this)">Add to Cart</button> <!-- ✔ Correct use of this -->
+  </div>
+</div>
+
+
+      <div class="middle" data-price="600">
+        <img src="shoe2.jpg" width="200px" height="200px" alt="shoe Image">
+        <p class="product" width="150px">Step up your style game with shoes that speak for you. Trendy, comfy, and bold—get yours before they’re gone!" </p>
+        <p class="product"><strong>price:</strong>600</p>
+         <div class="product">
+    <label>Qty:</label>
+    <input type="number" class="quantity-input" min="1" value="1" style="width: 50px;">
+  </div>
+   <div class="product" >
+    <button onclick="addToCart(this)">Add to Cart</button> <!-- ✔ Correct use of this -->
+  </div>
+</div>
+
+           
+
+        
+    
+ 
+      <div class="middle" data-price="400">
+        <img src="shoe5.jpg" width="200px" height="200px" alt="shoe Image">
+        <p class="product" width="150px">Step up your style game with shoes that speak for you. Trendy, comfy, and bold—get yours before they’re gone!" </p>
+        <p class="product"><strong>price:</strong>400</p>
+         <div class="product">
+    <label>Qty:</label>
+    <input type="number" class="quantity-input" min="1" value="1" style="width: 50px;">
+  </div>
+   <div class="product" >
+    <button onclick="addToCart(this)">Add to Cart</button> <!-- ✔ Correct use of this -->
+  </div>
+</div>
+      <div class="middle" data-price="899">
+        <img src="shoe4.jpg" width="200px" height="200px" alt="shoe Image">
+        <p class="product" width="150px">Step up your style game with shoes that speak for you. Trendy, comfy, and bold—get yours before they’re gone!" </p>
+        <p class="product"><strong>price:</strong>899</p>
+         <div class="product">
+    <label>Qty:</label>
+    <input type="number" class="quantity-input" min="1" value="1" style="width: 50px;">
+  </div>
+   <div class="product" >
+    <button onclick="addToCart(this)">Add to Cart</button> <!-- ✔ Correct use of this -->
+  </div>
+</div>
+<div class="middle" dataprice="1003"></div>
+<img src="shoe6.jpg "width="200px" height="200px" alt="shoe image">
+<p class=" product" width="150">Step up your style game with shoes that speak for you. Trendy, comfy, and bold—get yours before they’re gone!"</p>
+<p class="product"><strong>price</strong>1003</p>
+<div class="product"></div>
+<Label> Qty:</Label>
+    
+</body>
+<script>
+  function addToCart(button) {
+    const productDiv = button.closest('.middle');
+    const quantityInput = productDiv.querySelector('.quantity-input');
+    const quantity = parseInt(quantityInput.value);
+    const pricePerItem = parseInt(productDiv.getAttribute('data-price'));
+
+    if (isNaN(quantity) || quantity < 1) {
+      alert("Please enter a valid quantity.");
+      return;
+    }
+
+    const total = quantity * pricePerItem;
+    alert("You added " + quantity + " item(s) to your cart.\nTotal Price: ₹" + total);
+  }
+</script>
+
+
+
+</html>
