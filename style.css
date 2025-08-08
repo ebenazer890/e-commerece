@@ -140,6 +140,7 @@ body {
   padding: 10px;
   text-align: center;
   margin: 25px;
+  
 }
 
 .middle:hover {
@@ -154,6 +155,7 @@ body {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  
 }
 
 .product button {
@@ -167,4 +169,75 @@ body {
   background-color: #0056b3;
   
 }
+.shoes
+{
+  display: flex;
+  justify-content: center;
+  margin-top:89px;
+}
 
+/*--about page-----*/
+.about-page {
+  background-color: #ccc;
+  background-image: url("shoeabout.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 500px;
+              /* needed for justify-content & align-items */
+  flex-direction: column;
+  justify-content: center;    /* center vertically */
+  align-items: center;        /* center horizontally */
+  min-height: 100vh;
+  margin: 0;                  /* remove default body margin */
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-top: 50px;
+}
+
+p {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.st {
+  display: flex;
+  justify-content: center;
+  padding-top: 30%;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#first {
+  width: 100%;
+  padding: 20px;
+  /* height: auto lets content decide */
+}
+
+#second {
+  width: 100%;
+  padding: 20px;
+  height: 50vh; /* reduced height for better layout */
+}
+.clients {
+  display: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.client1 {
+  width: 200px;
+  height: 100px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 10px;
+  overflow: hidden;     /* hides extra text */
+  text-overflow: ellipsis; /* adds ... if text overflows */
+  white-space: normal;  /* allows text to wrap */
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 50px;
+}
