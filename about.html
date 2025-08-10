@@ -1,65 +1,63 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>🗺️ E-Commerce </title>
-  <link rel="stylesheet" href="style.css" />
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-     <script src="https://cdn.tailwindcss.com"></script>
-     
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - E-Commerce</title>
+  <link rel="stylesheet" href="about.css">
 </head>
-<body class="about-page">
-  <!--nav-bar-->
+<body>
 
-<nav class="navbar">
-  <div class="nav-left">
-    <button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <div class="logo">🗺️ E-Commerce </div>
-  </div>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <span class="menu-icon">&#9776;</span>
+     
+      <div class="logo">🗺️ E-Commerce</div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shoes.html" class="active">Shoes</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="search-box">
+      <input type="text" placeholder="Search...">
+      <button>Go</button>
+    </div>
+  </nav>
 
-  <ul class="nav-menu" id="nav-menu" role="menu">
-    <li role="none"><a href="index.html" role="menuitem">Home</a></li>
-    <li role="none"><a href="shoes.html" role="menuitem">shoes</a></li>
-    <li role="none"><a href="#" role="menuitem">About</a></li>
-    <li role="none"><a href="#" role="menuitem">Services</a></li>
-    <li role="none"><a href="#" role="menuitem">Contact</a></li>
-  </ul>
-<!--search bar-->
+  <!-- Hero Section with Background Image -->
+  <section class="hero"></section>
 
-  <form class="nav-search" role="search" action="#" method="GET">
-    <input type="search" name="q" placeholder="Search..." aria-label="Search" />
-    <button type="submit">Go</button>
-  </form>
-</nav>
-<body class="about-page">
-  <section id="first" class="container1">
-    <div class="about">
-      <h1>About us</h1>
-      <p>Welcome to e-commerce, your trusted destination for quality products at unbeatable value.</p>
-      <div class="flex justify-center">
-        <!-- You can place an image or other content here if needed -->
+  <!-- About Content -->
+  <section class="about-content">
+    <h2>About Our Store</h2>
+    <p>We believe that shoes are more than just footwear — they're a statement of style, personality, and confidence. Our mission is to provide high-quality, fashionable, and comfortable shoes for everyone.</p>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="reviews">
+    <h2>What Our Customers Say</h2>
+    <div class="reviews-container">
+      <div class="review-card">
+         <p>⭐️⭐️⭐️⭐️</p>
+        <p>"Absolutely love these shoes! Super comfy and stylish."</p>
+        <span>- Alex</span>
+      </div>
+      <div class="review-card">
+         <p>⭐️⭐️⭐️⭐️</p>
+        <p>"Fast delivery and the quality exceeded my expectations!"</p>
+        <span>- Priya</span>
+      </div>
+      <div class="review-card">
+        <p>⭐️⭐️⭐️⭐️</p>
+        <p>"Perfect fit, and they go with everything in my wardrobe."</p>
+        <span>- John</span>
       </div>
     </div>
   </section>
-
-  <!--section 2-->
-  <section id="second">
-    <strong class="st">Satisfied clients</strong>
-    <div class="clients">
-  <div class="client1">
-    ⭐️⭐️⭐️⭐️⭐️<br>
-    "Amazing quality and fast shipping! I found exactly what I wanted, and the customer service was very helpful. Highly recommend!"<br>
-    — Priya S.
-  </div>
-</div>
-
-  </section>
-</body>
 
 </body>
 </html>

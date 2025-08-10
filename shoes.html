@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>🗺️ E-Commerce </title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="shoes.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
@@ -23,13 +23,13 @@
     <div class="logo">🗺️ E-Commerce </div>
   </div>
 
-  <ul class="nav-menu" id="nav-menu" role="menu">
-    <li role="none"><a href="index.html" role="menuitem">Home</a></li>
-    <li role="none"><a href="shoes.html" role="menuitem">shoes</a></li>
-    <li role="none"><a href="about.html" role="menuitem">About</a></li>
-    <li role="none"><a href="#" role="menuitem">Services</a></li>
-    <li role="none"><a href="#" role="menuitem">Contact</a></li>
-  </ul>
+ <ul class="nav-menu" id="nav-menu" role="menubar">
+      <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+      <li role="none"><a href="shoes.html" role="menuitem" class="active">Shoes</a></li>
+      <li role="none"><a href="about.html" role="menuitem" >About</a></li>
+      <li role="none"><a href="#" role="menuitem">Services</a></li>
+      <li role="none"><a href="#" role="menuitem">Contact</a></li>
+    </ul>
 <!--search bar-->
   <form class="nav-search" role="search" action="#" method="GET">
     <input type="search" name="q" placeholder="Search..." aria-label="Search" />
@@ -98,20 +98,40 @@
     <button onclick="addToCart(this)">Add to Cart</button> <!-- ✔ Correct use of this -->
   </div>
 </div>
-<div class="middle" dataprice="1003">
-<img src="shoe6.jpg "width="200px" height="200px" alt="shoe image">
-<p class=" product" width="150">Step up your style game with shoes that speak for you. Trendy, comfy, and bold—get yours before they’re gone!"</p>
-<p class="product"><strong>price</strong>1003</p>
-<div class="product">
-<Label> Qty:</Label>
-<input type="number" class="quantity-input" min="1" value="1" style="width: 50px;">
-</div>
-<div class="product">
+<div class="middle" data-price="1003">
+  <img src="shoe6.jpg" width="200px" height="200px" alt="Shoe Image">
 
-</div>
-<button onclick="addToCart(this)">Add to Cart</button> <!-- ✔ Correct use of this -->
+  <p class="product" style="width: 150px;">
+    Step up your style game with shoes that speak for you. Trendy, comfy.
+  </p>
+
+  <p class="product"><strong>Price:</strong> ₹1003</p>
+
+  <div class="product">
+    <label>Qty:</label>
+    <input type="number" class="quantity-input" min="1" value="1" style="width: 50px;">
+  </div>
+
+  <div class="product">
+    <button onclick="addToCart(this)">Add to Cart</button> <!-- ✔ Correct use of this -->
   </div>
 </div>
+<div class="middle" data-price="788">
+        <img src="shoe7.jpg" width="200px" height="200px" alt="shoe Image">
+        <p class="product" width="150px">Step up your style game with shoes that speak for you. Trendy, comfy, and bold—get yours before they’re gone!" </p>
+        <p class="product"><strong>price:</strong>788</p>
+         <div class="product">
+    <label>Qty:</label>
+    <input type="number" class="quantity-input" min="1" value="1" style="width: 50px;">
+  </div>
+   <div class="product" >
+    <button onclick="addToCart(this)">Add to Cart</button> <!-- ✔ Correct use of this -->
+  </div>
+</div>
+
+</div>
+
+
 </div>
 
     
